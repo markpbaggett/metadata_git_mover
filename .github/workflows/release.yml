@@ -22,7 +22,9 @@ jobs:
         key: ${{ runner.os }}-nimble-stable
 
     - name: Setup nim
-      uses: jiro4989/setup-nim-action@v1.3.0
+      uses: jiro4989/setup-nim-action@v1
+      with:
+        nim-version: '1.4.0'
     
     - name: Install dependencies and my stuff
       run: |
